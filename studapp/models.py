@@ -20,4 +20,8 @@ class student(models.Model):
     dob=models.DateField()
     course_id=models.ForeignKey(course,on_delete=models.SET_NULL,null=True)
 
+class teacher(models.Model)
+    teacher_name=models.CharField(max_length=True)
+
+
 
