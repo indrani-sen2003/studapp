@@ -10,6 +10,7 @@ class major(models.Model):
 class course(models.Model):
     course_id=models.CharField(max_length=20)
     dur=models.IntegerField
+    fees=models.IntegerField
     subj=models.ForeignKey(major,on_delete=models.SET_NULL,null=True)
 
 
