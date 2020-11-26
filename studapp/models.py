@@ -5,8 +5,6 @@ from django.db import models
 class major(models.Model):
     subj_name=models.CharField(max_length=30)
     teacher_name=models.CharField(max_length=20)
-
-
 class course(models.Model):
     course_id=models.CharField(max_length=20)
     dur=models.IntegerField
@@ -22,6 +20,3 @@ class student(models.Model):
 
 class teacher(models.Model)
     teacher_name=models.CharField(max_length=True)
-
-
-
